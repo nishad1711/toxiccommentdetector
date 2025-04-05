@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Lite - Toxic Comment Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Parent wrapper for centering -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="post">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaxagYIJuAXWGs0ExWWQBcutAN-i2qU8GvLw&s"
+            alt="Encrypted image"
+          />
+          <p class="caption">Try To Comment....</p>
+        </div>
+
+        <div class="comments">
+          <h3>Comments</h3>
+          <ul id="commentList"></ul>
+
+          <textarea
+            id="commentInput"
+            placeholder="Write a comment..."
+          ></textarea>
+          <button onclick="postComment()">Post Comment</button>
+        </div>
+      </div>
+
+      <div class="Note">
+        Note: Try to comment words that are toxic like "stupid", "hate",
+        "idiot", "dumb", "trash", "ugly".
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
